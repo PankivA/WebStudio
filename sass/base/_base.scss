@@ -1,0 +1,60 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+
+img {
+display: block;
+height: auto;
+max-width: 100%;
+}
+
+.container {
+  width: 479px;
+  margin: 0 auto;
+  padding: 60px 15px;
+  width: 100%;
+}
+
+@include mq(mob) {
+  .container {
+    width: 480px;
+  }
+}
+
+@include mq(tab) {
+  .container {
+    width: 768px;
+  }
+}
+
+@include mq(desk) {
+  .container {
+    width: 1200px;
+    padding: 94px 15px;
+  }
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
+  color: var(--primary-text-color);
+  text-align: center;
+
+  @include mq(desk) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
