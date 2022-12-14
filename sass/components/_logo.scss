@@ -1,5 +1,5 @@
 .logo {
-    padding: 25px 0;
+    padding: 16px 0;
     margin-right: 0;
   
     font-family: var(--secondary-font);
@@ -7,9 +7,14 @@
     font-size: 24px;
     color: var(--logo-color);
 
+    @include mq(tab) {
+      padding: 26px 0;
+    }
+
     
   @include mq(desk) {
     font-size: 26px;
+    padding: 25px 0;
   }
   }
   

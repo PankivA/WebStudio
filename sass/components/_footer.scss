@@ -3,9 +3,10 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  // padding: 60px 0;
-
   background-color: var(--footer-bg-color);
+  .container {
+    padding: 60px 15px;
+  }
 }
 
 .footer__container {
@@ -14,6 +15,7 @@
   flex-wrap: wrap;
   justify-content:space-around;
   align-items: baseline;
+  
   }
 
   @include mq(desk) {
