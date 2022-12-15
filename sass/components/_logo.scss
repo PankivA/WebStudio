@@ -1,23 +1,22 @@
 .logo {
-    padding: 16px 0;
-    margin-right: 0;
-  
-    font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 24px;
-    color: var(--logo-color);
+  padding: 16px 0;
+  margin-right: 0;
 
-    @include mq(tab) {
-      padding: 26px 0;
-    }
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--logo-color);
 
-    
+  @include mq(tab) {
+    padding: 26px 0;
+  }
+
   @include mq(desk) {
     font-size: 26px;
     padding: 25px 0;
   }
-  }
-  
+}
+
 .logo--accent {
-    color: var(--accent-color);
-  }
+  color: var(--accent-color);
+}

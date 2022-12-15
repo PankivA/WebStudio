@@ -4,11 +4,10 @@ body {
   line-height: 1.19;
 }
 
-
 img {
-display: block;
-height: auto;
-max-width: 100%;
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 .container {
@@ -39,9 +38,10 @@ section {
   padding: 60px 15px;
   @include mq(desk) {
     padding: 94px 15px;
-    }
+  }
 }
-header, footer {
+header,
+footer {
   padding: 0 15px;
 }
 
