@@ -12,29 +12,37 @@ max-width: 100%;
 }
 
 .container {
-  width: 479px;
+  // width: 450px;
   margin: 0 auto;
-  padding: 60px 15px;
   width: 100%;
 }
 
 @include mq(mob) {
   .container {
-    width: 480px;
+    width: 450px;
   }
 }
 
 @include mq(tab) {
   .container {
-    width: 768px;
+    width: 738px;
   }
 }
 
 @include mq(desk) {
   .container {
-    width: 1200px;
-    padding: 94px 15px;
+    width: 1170px;
   }
+}
+
+section {
+  padding: 60px 15px;
+  @include mq(desk) {
+    padding: 94px 15px;
+    }
+}
+header, footer {
+  padding: 0 15px;
 }
 
 .link {

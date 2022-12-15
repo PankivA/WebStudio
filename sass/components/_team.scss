@@ -26,26 +26,33 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    img {
-      display: block;
-      max-width: 100%;
-      height: auto;
+    @include mq(mob-only) {
+      // max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
+
     @include mq(tab-only) {
-      width: calc((100% - 30px)/2);
       &:nth-child(2n+1) {
         margin-right: 30px;
+      }
+
+      &:not(:nth-child(-n+2)) {
+        margin-bottom: 0;
       }
     }
 
     @include mq(desk) {
-    width: calc((100% - 3*30px)/4);
+      margin-bottom: 0;
     &:not(:last-child) {
+      // width: calc((100% - 3*30px)/4);
       margin-right: 30px;
     }
     }
-
   }
   
   .teammate__info {

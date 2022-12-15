@@ -97,10 +97,12 @@
       &:nth-child(n+4) {
         margin-top: 30px;
       }
-  
-    }
-    
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+    }    
   }
+}
   
   .cards__description {
     padding: 20px 24px;

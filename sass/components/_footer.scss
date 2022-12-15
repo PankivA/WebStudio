@@ -4,9 +4,8 @@
   margin-left: auto;
   margin-right: auto;
   background-color: var(--footer-bg-color);
-  .container {
-    padding: 60px 15px;
-  }
+  padding: 60px 15px;
+
 }
 
 .footer__container {
@@ -149,7 +148,15 @@
   @include mq(desk) {
     display: flex;
   }
+
+  label {
+    @include mq(desk) {
+      width: 358px;
+    }
+  }
 }
+
+
 
 .footer-subscribe__input {
   margin-bottom: 20px;
@@ -170,7 +177,7 @@
   }
    
   @include mq(desk) {
-    width: 358px;
+    width: 100%;
     margin-bottom: 0;
     // display: inline-flex;
   }
